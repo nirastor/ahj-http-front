@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Help Desc</title>
+</head>
+<body>
+    <div class="app"></div>
+    <div class="ticket-dialog dialog display-none">
+        <div class="ticked-dialog-title">Заголовок</div>
+        <form>
+            <label for="short-description">Краткое описание</label>
+            <input type="text" id="short-description">
+            <label for="short-description">Подробное описание</label>
+            <input type="text" id="description">
+            <button class="ticked-dialog-cancel">Отмена</button>
+            <button class="ticked-dialog-confirm" type="submit">Ok</button>
+        </form>
+    </div>
+    <div class="delete-dialog dialog display-none">
+        <div class="delete-dialog-title">Удалить</div>
+        <div class="delete-dialog-text">Вы уверены, что хотите удалить тикет? Это действие необратимо</div>
+        <button class="delete-dialog-cancel">Отмена</button>
+        <button class="delete-dialog-confirm">Ok</button>
+    </div>
+    <ul class="display-none">
+        <li class="task-template">
+            <div class="task-line">
+                <div class="task-status task-control"></div>
+                <div class="task-short-name">Короткое название</div>
+                <div class="task-datetime">Дата и время</div>
+                <button class="button-task-edit task-control">Редактировать</button>
+                <button class="button-task-delete task-control">Удалить</button>
+            </div>
+            <div class="task-description display-none">Длинное название</div>
+        </li>
+    </ul>
+</body>
+</html>
